@@ -295,7 +295,7 @@ const login = async (req, res) => {
     );
     res.cookie("token", token, { httpOnly: true });
     // res.render("login", { successMessage: "Login successful" });
-    res.redirect("http://localhost:5000/login");
+    res.redirect("http://localhost:5000/allaccepted");
     console.log("Login successful");
   } catch (err) {
     console.error(err);
